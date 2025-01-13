@@ -1,0 +1,84 @@
+@layer base {
+
+    /* Définir 1rem à 10px */
+    html {
+        font-size: 62.5%;
+        /* 62.5% de 16px = 10px */
+    }
+
+    /* 1. Réinitialisation des marges et des espacements */
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        /* Supprime les marges par défaut */
+        padding: 0;
+        /* Supprime les espacements par défaut */
+        box-sizing: border-box;
+        /* Inclut le padding et la bordure dans les dimensions de l'élément */
+    }
+
+    /* 2. Définition des styles de base */
+    body {
+        font-family: Arial, sans-serif;
+        /* Police par défaut */
+        background-color: #f5f5f5;
+        /* Couleur de fond par défaut */
+        color: #333;
+        /* Couleur du texte par défaut */
+        line-height: 1.5;
+        /* Interligne par défaut pour le texte */
+    }
+
+    /* 3. Réinitialisation des titres */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        /* Supprime les marges par défaut des titres */
+    }
+
+    /* 4. Réinitialisation des listes */
+    ul,
+    ol {
+        list-style: none;
+        /* Supprime les puces et les numéros */
+    }
+
+    /* 5. Réinitialisation des liens */
+    a {
+        text-decoration: none;
+        /* Supprime le soulignement par défaut des liens */
+        color: inherit;
+        /* Hérite de la couleur du texte */
+    }
+
+    /* 6. Réinitialisation des images */
+    img {
+        max-width: 100%;
+        /* Rendre les images réactives */
+        height: auto;
+        /* Maintenir les proportions des images */
+    }
+
+    /* 7. Réinitialisation des tableaux */
+    table {
+        border-collapse: collapse;
+        /* Supprime les espaces entre les cellules */
+        width: 100%;
+        /* Rendre les tables réactives */
+    }
+
+    /* 8. Réinitialisation des boutons */
+    button {
+        background: none;
+        /* Supprime les styles par défaut des boutons */
+        border: none;
+        /* Supprime les bordures par défaut des boutons */
+        cursor: pointer;
+        /* Change le curseur au survol */
+    }
+}

@@ -1,56 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <section>
-      <h1>Documentation rapide de GIT</h1>
-      <h3>
-        N'hésitez pas a utiliser Ctrl-F pour aller chercher un text directement
-      </h3>
-      <hr />
-      <div>
-        <h3>Lors de projet commun</h3>
-        <p><span>Etape 1 :</span> Creer un fork du projet, sur le github du chef de projet. Cela va creer une copie sur votre github</p>
-        <img src="etape1.png" alt="">
-        <img src="etape2.png" alt="">
-      </div>
-      <div>
-        <p><span>Etape 2 :</span> Ouvrez le terminal Bash a l'endroit ou vous voulez cloner votre projet et entrez la commande <br> <span>git clone git@github.com:agim-coroli/PHP-base.git</span> suivi de la clé SSH du projet</p>
-        <img src="etape3.png" alt="">
-        <img class="imgGitClone" src="clone.png" alt="">
-      </div>
-      <div>
-        <p><span>Etape 3 :</span> Lorsque vous voulez travailler sur votre fork, ne toucher pas au main, mais creer plutot une branche avec la commande <span>git checkout -b nomDeLaBranche</span> Cela va créer la branche et egalement vous placer dessu</p>
-        <img src="git checkout.png" alt="">
-      </div>
-      <div>
-        <p><span>Etape 4 :</span> Une fois votre travaille effectuer sur la nouvelle branche, vous devez push votre travaille sur cette branche avec <span>git push origin nomDeLaBranche</span></p>
-      </div>
-      <div>
-        <p><span>Etape 5 :</span> Une fois vos modification push à létape 4, vous devez faire un <span>pull request</span> sur votre fork de github, cela fera automatiquement une demande au chef de projet sur son github</p>
-        <img src="pullrequest.png" alt="">
-        <img src="newpull.png" alt="">
-      </div>
-      <div>
-        <p><span>Etape 6 :</span> Une fois que vous avez cliqué sur <span>new pull request</span> a l'étape 5. Vous devez annoncer de <span>ou vers ou</span> vous voulez creer le pull request. Ici vous partez de votre branche vers la main du projet original.</p>
-        <img src="versmain.png" alt="">
-      </div>
-      <div>
-        <p>Etape 7 : Dans le cas ou il y'a eu des modification dans la copie original du chef de projet</p>
-      </div>
-      <div>
-        <h3>Lors de projet commun</h3>
-        <p>Etape 1 : Creer</p>
-      </div>
-      <div>
-        <h3>Lors de projet commun</h3>
-        <p>Etape 1 : Creer</p>
-      </div>
-    </section>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: black;
+      height: 100vh;
+      overflow-y: hidden;
+    }
+    section{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 93vh;
+      font-size: 2.5rem;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+      border: 1px solid white;
+      padding: 10%;
+    }
+    a:hover{
+      box-shadow: 0px 2px 5px 11px rgba(7, 87, 111, 0.77);
+      background-color: rgba(7, 87, 111, 0.77);
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="gitGithub"><a href="html/git.html">Git/github</a></div>
+    <div class="javascript"><a href="html/javascript.html">javascript</a></div>
+    <div class="php"><a href="">PHP</a></div>
+    <div class="python"><a href="">Python</a></div>
+  </section>
+</body>
 </html>

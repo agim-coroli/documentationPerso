@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../layer.css">
+    <script src="../main.js"></script>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        section{
+            width: 50%;
+            margin: auto;
+            background-color: rgb(138, 138, 138);
+        }
+        h1{
+            text-align: center;
+            font-size: 3.5rem;
+            text-decoration: underline;
+            padding: 5%;
+        }
+        li{
+            font-size: 2.5rem;
+            padding: 1%;
+            color: black;
+            font-weight: bold;
+            letter-spacing:.5px;
+        }
+        p{
+            width: 90%;
+            margin: auto;
+            padding: 3%;
+            border: 1px solid black;
+            font-size: 1.9rem;
+            font-style: italic;
+            background-color: #fff;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Les méthodes globales</h1>
+        <ul>
+            <li class="txt">decodeURI()</li><p></p>
+            <li class="txt">decodeURIComponent()</li><p></p>
+            <li class="txt">encodeURI()</li><p></p>
+            <li class="txt">encodeURIComponent()</li><p></p>
+            <li class="txt">eval()</li><p></p>
+            <li class="txt">isFinite()</li><p></p>
+            <li class="txt">isNaN()</li><p></p>
+            <li class="txt">parseFloat()</li><p></p>
+            <li class="txt">parseInt()</li><p></p>
+            <li class="txt">unescape()</li><p></p>
+        </ul>
+        <h1>Méthodes pour String</h1>
+        <ul>
+            <li class="txt">charAt()</li><p>charAt() permet d'aller chercher l'index précis d'une chaine de caractère <br>const phrase = 'Bonjour le monde'<br>console.log(phrase.charAt(4)) <br>Resultat = "o" (4ieme index de phrase) </p>
+            <li class="txt">charCodeAt()</li><p></p>
+            <li class="txt">codePointAt()</li><p></p>
+            <li class="txt">concat()</li><p></p>
+            <li class="txt">endsWith()</li><p></p>
+            <li class="txt">includes()</li><p></p>
+            <li class="txt">indexOf()</li><p>Recherche le numero de l'index d'un mot dans une chaine de caractère<br>const phrase = 'bonjour tout le monde'; <br>let index = phrase.indexOf('monde') <br>console.log(index); <br>Resultat = 16 (Il part se mettre a l'emplacement du premiere index de monde, ce qui en fait le 16 ieme)</p>
+            <li class="txt">lastIndexOf()</li><p></p>
+            <li class="txt">localeCompare()</li><p></p>
+            <li class="txt">match()</li><p></p>
+            <li class="txt">matchAll()</li><p></p>
+            <li class="txt">normalize()</li><p></p>
+            <li class="txt">padEnd()</li><p></p>
+            <li class="txt">padStart()</li><p></p>
+            <li class="txt">repeat()</li><p></p>
+            <li class="txt">replace()</li><p>Remplace une chaine de caractère par une autre dans une phrase <br>let phrase = 'Bonjour'; <br>
+                let newPhrase = phrase.replace('jour', 'soir'); <br>Resultat = 'Bonsoir'</p>
+            <li class="txt">replaceAll()</li><p></p>
+            <li class="txt">search()</li><p></p>
+            <li class="txt">slice()</li><p></p>
+            <li class="txt">split()</li><p></p>
+            <li class="txt">startsWith()</li><p></p>
+            <li class="txt">substr()</li><p>Permet d'éxtraire des caractère d'une chaine en commencant par l'emplacement de l'index et le nombre d'index a extraire <br></p>
+            <li class="txt">substring()</li><p></p>
+            <li class="txt">toLocaleLowerCase()</li><p></p>
+            <li class="txt">toLocaleUpperCase()</li><p></p>
+            <li class="txt">toLowerCase()</li><p></p>
+            <li class="txt">toString()</li><p></p>
+            <li class="txt">toUpperCase()</li><p></p>
+            <li class="txt">trim()</li><p>Supprime les espaces des deux extrémités d'une chaine <br>let phrase = ' Bonjour le monde '; <br>phrase.trim(); <br>console.log(phrase) <br>Resultat = 'Bonjour le monde'</p>
+            <li class="txt">trimEnd()</li><p></p>
+        </ul>
+    
+        <h1>Méthodes pour Number</h1>
+        <ul>
+            <li class="txt">isFinite()</li><p></p>
+            <li class="txt">isInteger()</li><p></p>
+            <li class="txt">isNaN()</li><p></p>
+            <li class="txt">isSafeInteger()</li><p></p>
+            <li class="txt">parseFloat()</li><p></p>
+            <li class="txt">parseInt()</li><p></p>
+            <li class="txt">toExponential()</li><p></p>
+            <li class="txt">toFixed()</li><p></p>
+            <li class="txt">toLocaleString()</li><p></p>
+            <li class="txt">toPrecision()</li><p></p>
+            <li class="txt">toString()</li><p></p>
+            <li class="txt">valueOf()</li><p></p>
+        </ul>
+        <h1>Méthodes pour Array (Tableaux)</h1>
+        <ul>
+            <li class="txt">concat()</li><p></p>
+            <li class="txt">copyWithin()</li><p></p>
+            <li class="txt">entries()</li><p></p>
+            <li class="txt">every()</li><p></p>
+            <li class="txt">fill()</li><p></p>
+            <li class="txt">filter()</li><p></p>
+            <li class="txt">find()</li><p></p>
+            <li class="txt">findIndex()</li><p></p>
+            <li class="txt">flat()</li><p></p>
+            <li class="txt">flatMap()</li><p></p>
+            <li class="txt">forEach()</li><p></p>
+            <li class="txt">includes()</li><p></p>
+            <li class="txt">indexOf()</li><p></p>
+            <li class="txt">join()</li><p></p>
+            <li class="txt">keys()</li><p></p>
+            <li class="txt">lastIndexOf()</li><p></p>
+            <li class="txt">map()</li><p></p>
+            <li class="txt">pop()</li><p></p>
+            <li class="txt">push()</li><p></p>
+            <li class="txt">reduce()</li><p></p>
+            <li class="txt">reduceRight()</li><p></p>
+            <li class="txt">reverse()</li><p></p>
+            <li class="txt">shift()</li><p></p>
+            <li class="txt">slice()</li><p></p>
+            <li class="txt">some()</li><p></p>
+            <li class="txt">sort()</li><p></p>
+            <li class="txt">splice()</li><p></p>
+            <li class="txt">toLocaleString()</li><p></p>
+            <li class="txt">toString()</li><p></p>
+            <li class="txt">unshift()</li><p></p>
+            <li class="txt">values()</li><p></p>
+        </ul>
+    
+        <h1>Méthodes pour Object (Objets)</h1>
+        <ul>
+            <li class="txt">assign()</li><p></p>
+            <li class="txt">create()</li><p></p>
+            <li class="txt">defineProperties()</li><p></p>
+            <li class="txt">defineProperty()</li><p></p>
+            <li class="txt">entries()</li><p></p>
+            <li class="txt">freeze()</li><p></p>
+            <li class="txt">fromEntries()</li><p></p>
+            <li class="txt">getOwnPropertyDescriptor()</li><p></p>
+            <li class="txt">getOwnPropertyDescriptors()</li><p></p>
+            <li class="txt">getOwnPropertyNames()</li><p></p>
+            <li class="txt">getOwnPropertySymbols()</li><p></p>
+            <li class="txt">getPrototypeOf()</li><p></p>
+            <li class="txt">hasOwnProperty()</li><p></p>
+            <li class="txt">is()</li><p></p>
+            <li class="txt">isExtensible()</li><p></p>
+            <li class="txt">isFrozen()</li><p></p>
+            <li class="txt">isPrototypeOf()</li><p></p>
+            <li class="txt">isSealed()</li><p></p>
+            <li class="txt">keys()</li><p></p>
+            <li class="txt">preventExtensions()</li><p></p>
+            <li class="txt">propertyIsEnumerable()</li><p></p>
+            <li class="txt">seal()</li><p></p>
+            <li class="txt">setPrototypeOf()</li><p></p>
+            <li class="txt">toLocaleString()</li><p></p>
+            <li class="txt">toString()</li><p></p>
+            <li class="txt">valueOf()</li><p></p>
+        </ul>
+        <h1>Méthodes pour Date</h1>
+        <ul>
+            <li class="txt">Date.now()</li><p></p>
+            <li class="txt">Date.parse()</li><p></p>
+            <li class="txt">Date.UTC()</li><p></p>
+            <li class="txt">getDate()</li><p></p>
+            <li class="txt">getDay()</li><p></p>
+            <li class="txt">getFullYear()</li><p></p>
+            <li class="txt">getHours()</li><p></p>
+            <li class="txt">getMilliseconds()</li><p></p>
+            <li class="txt">getMinutes()</li><p></p>
+            <li class="txt">getMonth()</li><p></p>
+            <li class="txt">getSeconds()</li><p></p>
+            <li class="txt">getTime()</li><p></p>
+            <li class="txt">getTimezoneOffset()</li><p></p>
+            <li class="txt">getUTCDate()</li><p></p>
+            <li class="txt">getUTCDay()</li><p></p>
+            <li class="txt">getUTCFullYear()</li><p></p>
+            <li class="txt">getUTCHours()</li><p></p>
+            <li class="txt">getUTCMilliseconds()</li><p></p>
+            <li class="txt">getUTCMinutes()</li><p></p>
+            <li class="txt">getUTCMonth()</li><p></p>
+            <li class="txt">getUTCSeconds()</li><p></p>
+            <li class="txt">setDate()</li><p></p>
+            <li class="txt">setFullYear()</li><p></p>
+            <li class="txt">setHours()</li><p></p>
+            <li class="txt">setMilliseconds()</li><p></p>
+            <li class="txt">setMinutes()</li><p></p>
+            <li class="txt">setMonth()</li><p></p>
+            <li class="txt">setSeconds()</li><p></p>
+            <li class="txt">setTime()</li><p></p>
+            <li class="txt">setUTCDate()</li><p></p>
+            <li class="txt">setUTCFullYear()</li><p></p>
+            <li class="txt">setUTCHours()</li><p></p>
+            <li class="txt">setUTCMilliseconds()</li><p></p>
+            <li class="txt">setUTCMinutes()</li><p></p>
+            <li class="txt">setUTCMonth()</li><p></p>
+            <li class="txt">setUTCSeconds()</li><p></p>
+            <li class="txt">toDateString()</li><p></p>
+            <li class="txt">toISOString()</li><p></p>
+            <li class="txt">toJSON()</li><p></p>
+            <li class="txt">toLocaleDateString()</li><p></p>
+            <li class="txt">toLocaleString()</li><p></p>
+            <li class="txt">toLocaleTimeString()</li><p></p>
+            <li class="txt">toString()</li><p></p>
+            <li class="txt">toTimeString()</li><p></p>
+            <li class="txt">toUTCString()</li><p></p>
+            <li class="txt">valueOf()</li><p></p>
+        </ul>
+    
+        <h1>Méthodes pour Math</h1>
+        <ul>
+            <li class="txt">abs()</li><p></p>
+            <li class="txt">acos()</li><p></p>
+            <li class="txt">acosh()</li><p></p>
+            <li class="txt">asin()</li><p></p>
+            <li class="txt">asinh()</li><p></p>
+            <li class="txt">atan()</li><p></p>
+            <li class="txt">atan2()</li><p></p>
+            <li class="txt">atanh()</li><p></p>
+            <li class="txt">cbrt()</li><p></p>
+            <li class="txt">ceil()</li><p></p>
+            <li class="txt">clz32()</li><p></p>
+            <li class="txt">cos()</li><p></p>
+            <li class="txt">cosh()</li><p></p>
+            <li class="txt">exp()</li><p></p>
+            <li class="txt">expm1()</li><p></p>
+            <li class="txt">floor()</li><p></p>
+            <li class="txt">fround()</li><p></p>
+            <li class="txt">hypot()</li><p></p>
+            <li class="txt">imul()</li><p></p>
+            <li class="txt">log()</li><p></p>
+            <li class="txt">log1p()</li><p></p>
+            <li class="txt">log10()</li><p></p>
+            <li class="txt">log2()</li><p></p>
+            <li class="txt">max()</li><p></p>
+            <li class="txt">min()</li><p></p>
+            <li class="txt">pow()</li><p></p>
+            <li class="txt">random()</li><p></p>
+            <li class="txt">round()</li><p></p>
+            <li class="txt">sign()</li><p></p>
+            <li class="txt">sin()</li><p></p>
+            <li class="txt">sinh()</li><p></p>
+            <li class="txt">sqrt()</li><p></p>
+            <li class="txt">tan()</li><p></p>
+            <li class="txt">tanh()</li><p></p>
+            <li class="txt">trunc()</li><p></p>
+        </ul>
+        <h1>Méthodes pour Function</h1>
+        <ul>
+            <li class="txt">apply()</li><p></p>
+            <li class="txt">bind()</li><p></p>
+            <li class="txt">call()</li><p></p>
+            <li class="txt">toString()</li><p></p>
+        </ul>
+    
+        <h1>Méthodes pour RegExp</h1>
+        <ul>
+            <li class="txt">exec()</li><p></p>
+            <li class="txt">test()</li><p></p>
+            <li class="txt">toString()</li><p></p>
+            <li class="txt">compile()</li><p></p>
+        </ul>
+    
+        <h1>Méthodes pour JSON</h1>
+        <ul>
+            <li class="txt">parse()</li><p></p>
+            <li class="txt">stringify()</li><p></p>
+        </ul>
+    
+        <h1>Méthodes pour Symbol</h1>
+        <ul>
+            <li class="txt">for()</li><p></p>
+            <li class="txt">keyFor()</li><p></p>
+            <li class="txt">toString()</li><p></p>
+        </ul>
+        <div>
+            <h1>Méthodes pour Inti</h1>
+            <h1>Intl.Collator</h1>
+            <ul>
+                <li class="txt">compare()</li><p></p>
+                <li class="txt">resolvedOptions()</li><p></p>
+            </ul>
+        
+            <h1>Intl.DateTimeFormat</h1>
+            <ul>
+                <li class="txt">format()</li><p></p>
+                <li class="txt">formatToParts()</li><p></p>
+                <li class="txt">resolvedOptions()</li><p></p>
+            </ul>
+        
+            <h1>Intl.NumberFormat</h1>
+            <ul>
+                <li class="txt">format()</li><p></p>
+                <li class="txt">formatToParts()</li><p></p>
+                <li class="txt">resolvedOptions()</li><p></p>
+            </ul>
+        
+            <h1>Intl.PluralRules</h1>
+            <ul>
+                <li class="txt">select()</li><p></p>
+                <li class="txt">resolvedOptions()</li><p></p>
+            </ul>
+        </div>
+        <h1>Map</h1>
+        <ul>
+            <li class="txt">clear()</li><p></p>
+            <li class="txt">delete()</li><p></p>
+            <li class="txt">entries()</li><p></p>
+            <li class="txt">forEach()</li><p></p>
+            <li class="txt">get()</li><p></p>
+            <li class="txt">has()</li><p></p>
+            <li class="txt">keys()</li><p></p>
+            <li class="txt">set()</li><p></p>
+            <li class="txt">values()</li><p></p>
+        </ul>
+    
+        <h1>Set</h1>
+        <ul>
+            <li class="txt">add()</li><p></p>
+            <li class="txt">clear()</li><p></p>
+            <li class="txt">delete()</li><p></p>
+            <li class="txt">entries()</li><p></p>
+            <li class="txt">forEach()</li><p></p>
+            <li class="txt">has()</li><p></p>
+            <li class="txt">values()</li><p></p>
+        </ul>
+    
+        <h1>WeakMap</h1>
+        <ul>
+            <li class="txt">delete()</li><p></p>
+            <li class="txt">get()</li><p></p>
+            <li class="txt">has()</li><p></p>
+            <li class="txt">set()</li><p></p>
+        </ul>
+    
+        <h1>WeakSet</h1>
+        <ul>
+            <li class="txt">add()</li><p></p>
+            <li class="txt">delete()</li><p></p>
+            <li class="txt">has()</li><p></p>
+        </ul>
+        <h2>Promise</h2>
+        <ul>
+            <li class="txt">all()</li><p></p>
+            <li class="txt">allSettled()</li><p></p>
+            <li class="txt">any()</li><p></p>
+            <li class="txt">race()</li><p></p>
+            <li class="txt">reject()</li><p></p>
+            <li class="txt">resolve()</li><p></p>
+        </ul>
+    
+        <h2>TypedArray (note: méthodes héritées de Array, plus quelques spécifiques)</h2>
+        <ul>
+            <li class="txt">buffer</li><p></p>
+            <li class="txt">byteLength</li><p></p>
+            <li class="txt">byteOffset</li><p></p>
+            <li class="txt">length</li><p></p>
+            <li class="txt">BYTES_PER_ELEMENT</li><p></p>
+            <li class="txt">set()</li><p></p>
+        </ul>
+    
+        <h2>DOM (quelques exemples courants)</h2>
+        <ul>
+            <li class="txt">createElement()</li><p></p>
+            <li class="txt">getElementById()</li><p></p>
+            <li class="txt">getElementsByClassName()</li><p></p>
+            <li class="txt">getElementsByTagName()</li><p></p>
+            <li class="txt">querySelector()</li><p></p>
+            <li class="txt">querySelectorAll()</li><p></p>
+            <li class="txt">appendChild()</li><p></p>
+            <li class="txt">removeChild()</li><p></p>
+            <li class="txt">innerHTML</li><p></p>
+            <li class="txt">textContent</li><p></p>
+        </ul>
+    
+        <h2>Event</h2>
+        <ul>
+            <li class="txt">preventDefault()</li><p></p>
+            <li class="txt">stopPropagation()</li><p></p>
+        </ul>
+    
+        <h2>Window</h2>
+        <ul>
+            <li class="txt">alert()</li><p></p>
+            <li class="txt">confirm()</li><p></p>
+            <li class="txt">prompt()</li><p></p>
+            <li class="txt">setTimeout()</li><p></p>
+            <li class="txt">setInterval()</li><p></p>
+            <li class="txt">clearTimeout()</li><p></p>
+            <li class="txt">clearInterval()</li><p></p>
+        </ul>
+    </section>
+</body>
+</html>

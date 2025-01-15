@@ -5,9 +5,10 @@ body {
   background-color: gray;
   overflow-x: hidden;
   font-size: 2rem;
+  font-family: sans-serif;
 }
 section{
-  width: 80%;
+  width: 75%;
   background-color: rgba(0, 0, 0, 0.668);
   color: white;
   margin:auto;
@@ -16,23 +17,28 @@ section{
 
 h1,h3{
   text-align: center;
+  text-decoration: underline;
 }
-
+h3{
+  margin: 0px;
+}
 div{
   border: 1px solid;
   padding: 1%;
-}
 
+}
+section > div{
+  margin-bottom: 5%;
+  box-shadow: 0px 2px 5px 11px rgba(255, 0, 0, 0.77);
+}
 p{
   margin: 0;
 }
 img{
   display: block;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 0, 0);
 }
-h3,h1{
-  text-decoration: underline;
-}
+
 
 span{
   background-color: green;
@@ -40,4 +46,32 @@ span{
 
 .imgGitClone{
   width: 26.9%;
+}
+
+.double{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+}
+
+.double div{
+  border: none;
+  width: 98%;
+}
+
+.double div:nth-of-type(2){
+  border-left: 1px solid rgb(255, 0, 0);
+}
+.no_marg_bot{
+  border-bottom: 1px solid rgb(252, 0, 0) !important;
+}
+
+.double>:nth-of-type(2){
+  display: flex;
+}
+
+.cas1et2{
+  display: flex;
+  width: 98%;
 }

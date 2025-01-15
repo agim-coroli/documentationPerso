@@ -24,44 +24,59 @@
         </div>
         <div>
             <p><span>Etape 2 :</span> Ouvrez le terminal Bash a l'endroit ou vous voulez cloner votre projet et entrez
-                la commande <br> <span>git clone git@github.com:agim-coroli/PHP-base.git</span> suivi de la clé SSH du
-                projet</p>
+                la commande <br> <span>git clone (clé SSH)</span></p>
             <img src="../img/etape3.png" alt="">
             <img class="imgGitClone" src="../img/clone.png" alt="">
         </div>
-        <div>
-            <p><span>Etape 3 :</span> Lorsque vous voulez travailler sur votre fork, ne toucher pas au main, mais creer
-                plutot une branche avec la commande <span>git checkout -b nomDeLaBranche</span> Cela va créer la branche
-                et egalement vous placer dessu</p>
-            <img src="../img/git checkout.png" alt="">
+
+        <div class="double">
+            <div class="no_marg_bot">
+                <p><span>Etape 3 :</span> Vous devez alors vérifié si vous etes connecter à l'upstream avec <span>git remote -v</span></p>
+            </div>
+            <div>
+                <div>
+                    <h3>Cas n°1</h3>
+                    <p>dans le cas ou vous n'êtes pas connecter, vous devez entrée la commande <span>git remote add upstream (clé ssh)</span> pour lié l'upstream avec l'origin (votre arbre(origin) avec l'arbre du chef de projet(upstream)) </p>
+                </div>
+                <div>
+                    <h3>Cas n°2</h3>
+                    <p>Vous êtes connecter à l'upstream ? Vous pouvez passer à l'étape suivante</p>
+                </div>
+            </div>
+        </div>
+        <div class="double">
+            <div class="no_marg_bot">
+                <p><span>Etape 4 :</span> Un fois connecter a l'upstream, vous devez vérifié si votre main est a jour avec la main de l'upstream<span></span></p>
+            </div>
+            <div class="cas1et2">
+                <div>
+                    <h3>Cas n°1</h3>
+                    <p>Si votre main n'est pas a jour avec l'uptstream main, entrée le code <span>git pull upstream main</span> pour récupéré les modification, suivi d'un <span>git push origin main</span> pour envoyer ce que vous avez récupéré sur votre main</p>
+                </div>
+                <div>
+                    <h3>Cas n°2</h3>
+                    <p>Si votre main est a jour, passer directement à l'étape suivante</p>
+                </div>
+            </div>
         </div>
         <div>
-            <p><span>Etape 4 :</span> Une fois votre travaille effectuer sur la nouvelle branche, vous devez push votre
-                travaille sur cette branche avec <span>git push origin nomDeLaBranche</span></p>
+            <p><span>Etape 5 :</span> Une fois votre main mis a jour, entrée la commande <span>git checkout -b nomDeVotreNouvelleBranche</span> pour creer une nouvelle branche et vous placer dessu. A ce moment la, commencez vos travaux. <br> (chaque fois que vous voulez faire un nouveau travail, vous devez a chaque fois créer une nouvelle branche et ne pas utiliser les branches existante.)</p>
         </div>
         <div>
-            <p><span>Etape 5 :</span> Une fois vos modification push à létape 4, vous devez faire un <span>pull
+            <p><span>Etape 6 :</span> Une fois vos travaux fini, faite un <span>git add .</span> suivi d'un <span>git commit -m "Message de votre commit"</span> et <span>git push origin nomDeVotreNouvelleBranche</span> pour enregistrer votre travail sur votre nouvelle branche.</p>
+        </div>
+        <div>
+            <p><span>Etape 7 :</span> Une fois que votre travail est push sur votre nouvelle Branche. Vous devez faire un <span>pull
                     request</span> sur votre fork de github, cela fera automatiquement une demande au chef de projet sur
                 son github</p>
             <img src="../img/pullrequest.png" alt="">
             <img src="../img/newpull.png" alt="">
         </div>
         <div>
-            <p><span>Etape 6 :</span> Une fois que vous avez cliqué sur <span>new pull request</span> a l'étape 5. Vous
+            <p><span>Etape 8 :</span> Une fois que vous avez cliqué sur <span>new pull request</span>. Vous
                 devez annoncer de <span>ou vers ou</span> vous voulez creer le pull request. Ici vous partez de votre
-                branche vers la main du projet original.</p>
+                <span>nomDeVotreNouvelleBranche</span> vers la branche <span>main</span> du projet original. Et vous envoyer le pull request</p>
             <img src="../img/versmain.png" alt="">
-        </div>
-        <div>
-            <p>Etape 7 : Dans le cas ou il y'a eu des modification dans la copie original du chef de projet</p>
-        </div>
-        <div>
-            <h3>Lors de projet commun</h3>
-            <p>Etape 1 : Creer</p>
-        </div>
-        <div>
-            <h3>Lors de projet commun</h3>
-            <p>Etape 1 : Creer</p>
         </div>
     </section>
 </body>

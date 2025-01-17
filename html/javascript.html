@@ -43,7 +43,8 @@
             background-color: #fff;
             color: rgb(0, 0, 0);
         }
-        span{
+
+        span {
             font-weight: bold;
             font-size: 2.5rem;
             color: black;
@@ -71,23 +72,23 @@
             <p></p>
             <li class="txt">parseFloat()</li>
             <p>
-               <span>Quand l'utiliser?</span>  <br> <br>
+                <span>Quand l'utiliser?</span> <br> <br>
                 Utilise le lorsque tu as un texte qui contient une chiffre, et que tu veux extraire ce nombre pour
                 l’utiliser dans des calculs. <br> Par exemple, si un utilisateur entre "123,45 euros", tu peux récupérer
                 juste le nombre grâce à parseFloat().<br> <br>
 
-               <span>Exemples pour mieux comprendre :</span>  <br>
+                <span>Exemples pour mieux comprendre :</span> <br>
                 let prix = "250.75 euros"; <br>
                 let nombre = parseFloat(prix); <br>
                 console.log(nombre); // Affiche 250.75 <br> <br>
 
-               <span>Remarque sur le point décimal :</span>  <br>
+                <span>Remarque sur le point décimal :</span> <br>
                 parseFloat() utilise uniquement le point comme séparateur décimal (et non la virgule).
                 parseFloat("12,34"); // NaN <br>
                 parseFloat("12.34"); // 12.34
 
                 <br><br>
-               <span>Texte sans nombre au début donne NaN (Not a Number) :</span>  <br>
+                <span>Texte sans nombre au début donne NaN (Not a Number) :</span> <br>
                 let nombre = parseFloat("abc123"); <br>
                 console.log(nombre); // NaN
 

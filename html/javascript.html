@@ -38,6 +38,11 @@
             background-color: #fff;
             color: rgb(0, 0, 0);
         }
+        span{
+            font-weight: bold;
+            font-size: 2.5rem;
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -51,7 +56,30 @@
             <li class="txt">eval()</li><p></p>
             <li class="txt">isFinite()</li><p></p>
             <li class="txt">isNaN()</li><p></p>
-            <li class="txt">parseFloat()</li><p></p>
+            <li class="txt">parseFloat()</li>
+            <p>
+               <span>Quand l'utiliser?</span>  <br> <br>
+                Utilise le lorsque tu as un texte qui contient une chiffre, et que tu veux extraire ce nombre pour
+                l’utiliser dans des calculs. <br> Par exemple, si un utilisateur entre "123,45 euros", tu peux récupérer
+                juste le nombre grâce à parseFloat().<br> <br>
+
+               <span>Exemples pour mieux comprendre :</span>  <br>
+                let prix = "250.75 euros"; <br>
+                let nombre = parseFloat(prix); <br>
+                console.log(nombre); // Affiche 250.75 <br> <br>
+
+               <span>Remarque sur le point décimal :</span>  <br>
+                parseFloat() utilise uniquement le point comme séparateur décimal (et non la virgule).
+                parseFloat("12,34"); // NaN <br>
+                parseFloat("12.34"); // 12.34
+
+                <br><br>
+               <span>Texte sans nombre au début donne NaN (Not a Number) :</span>  <br>
+                let nombre = parseFloat("abc123"); <br>
+                console.log(nombre); // NaN
+
+
+            </p>
             <li class="txt">unescape()</li><p></p>
         </ul>
         <h1>Méthodes pour String</h1>
@@ -76,7 +104,7 @@
             <li class="txt">replaceAll()</li><p></p>
             <li class="txt">search()</li><p></p>
             <li class="txt">slice()</li><p></p>
-            <li class="txt">split()</li><p></p>
+            <li class="txt">split()</li><p>Divise une chaine de caractere en tableau <br>Exemple : <br>let array = "Bonjour le monde" <br>array.split(" ") <br>Resultat : ["Bonjour", "le", "monde"]</p>
             <li class="txt">startsWith()</li><p></p>
             <li class="txt">substr()</li><p>Permet d'éxtraire des caractère d'une chaine en commencant par l'emplacement de l'index et le nombre de caractère a extraire <br>let phrase = "bonjour je mapelle" <br>let extraction = phrase.substr(3, 4) <br>Resultat = "jour"</p>
             <li class="txt">substring()</li><p></p>
@@ -117,25 +145,25 @@
             <li class="txt">flat()</li><p></p>
             <li class="txt">flatMap()</li><p></p>
             <li class="txt">forEach()</li><p></p>
-            <li class="txt">includes()</li><p></p>
-            <li class="txt">indexOf()</li><p></p>
-            <li class="txt">join()</li><p></p>
+            <li class="txt">includes()</li><p>Vérifie si un element est présent dans un tableau ou dans une chaine de caractere <br> Exemple : <br>let array = [1,2,3] <br>array.includes(2) <br>Resultat : True (car 2 existe dans le tableau)</p>
+            <li class="txt">indexOf()</li><p>Retourne le numero de l'index d'un tableau ou d'une chaine de caractere en donnant un element en argument <br> Exemple : <br>let array = [1,2,3] <br>array.indexOf(2) <br>Resultat : 1</p>
+            <li class="txt">join()</li><p>Regroupe un tableau en une chaine de caractere <br>Exemple : <br>let array = ["Bonjour", "le", "monde"] <br>array.join(" ") <br>Resultat : "Bonjour le monde"</p>
             <li class="txt">keys()</li><p></p>
             <li class="txt">lastIndexOf()</li><p></p>
             <li class="txt">map()</li><p></p>
-            <li class="txt">pop()</li><p></p>
-            <li class="txt">push()</li><p></p>
+            <li class="txt">pop()</li><p>Supprime un element a la fin d'une chaine de caractère ou un tableau <br> Exemple : <br>let array = [1,2,3]; <br>array.pop(3) <br>Resultat : array = [1,2]</p>
+            <li class="txt">push()</li><p>Ajoute un element a la fin d'une chaine de caractère ou un tableau <br> Exemple : <br>let array = [1,2,3]; <br>array.push(4) <br>Resultat : array = [1,2,3,4]</p>
             <li class="txt">reduce()</li><p></p>
             <li class="txt">reduceRight()</li><p></p>
             <li class="txt">reverse()</li><p></p>
-            <li class="txt">shift()</li><p></p>
-            <li class="txt">slice()</li><p></p>
+            <li class="txt">shift()</li><p>Supprime un element au debut d'une chaine de caractere ou un tableau <br> Exemple : <br>let array = [1,2,3]; <br>array.shift(1) <br>Resultat : array = [2,3]</p>
+            <li class="txt">slice()</li><p>Retourne des element entre des intervales donné <br>Exemple : <br> let array = [1,2,3,4,5] <br>array.slice(1, 3) <br>Resultat : [2, 3]</p>
             <li class="txt">some()</li><p></p>
             <li class="txt">sort()</li><p></p>
-            <li class="txt">splice()</li><p></p>
+            <li class="txt">splice()</li><p>Remplace un element dans un tableau a partir d'une certaine longueur et combien d'element sont remplacé et par quel element il est remplacer <br>Exemple : <br>let array = [1,2,3,4,5,6] <br>array.splice(2, 1, 9) <br>Resultat : array = [1,2,9,4,5,6]</p>
             <li class="txt">toLocaleString()</li><p></p>
             <li class="txt">toString()</li><p></p>
-            <li class="txt">unshift()</li><p></p>
+            <li class="txt">unshift()</li><p>Ajoute un element au début d'une chaine de caractère ou un tableau <br> Exemple : <br>let array = [1,2,3]; <br>array.unshift(4) <br>Resultat : array = [1,2,3,4]</p>
             <li class="txt">values()</li><p></p>
         </ul>
     
